@@ -9,7 +9,15 @@
 </head>
 
 <body class="w-75 mx-auto my-4">
-
+	/* Burada amaç bir butona tıklandığında içeriğin gösterilip-gizlenmesini ayarlamaktır.
+	ilk etapta a etiketini yani linki görmeyip butonu tanımlayalım ve id'si content olan
+	div içerisine yazı yazalım. Buton ile div'i yani yazıyı bağlamak için butonun
+	data-target attributuna #(diyez) ile id'sini yazıyoruz yani content'i. Tıklanınca
+	yapacağı işlemi belirtmek içinde data-toggle a collapse yazıyoruz. Div'in classına da
+	collapse yazıyoruz. Görüldüğü gibi ilk başta görünmeyen yazı butona basınca görünür
+	oluyor. Aynı şekilde a etiketi ile linke de bağlayabiliyoruz burda da data-target 
+	yerine href'e #id veriyoruz. Classa collapse show yazarsak başlangıç aşamasında 
+	yazı görünür şekilde yüklenir.*/
 	<p>
 		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content">
 			   Button
@@ -20,7 +28,7 @@
 		</a>
 	</p>
 
-	<div id="content" class="collapse show">
+	<div id="content" class="collapse show"> <!-- show -->
 		<h2>Lorem ipsum dolor.</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum blanditiis sit, repudiandae consectetur earum dolorum porro quidem. Eum commodi tempore laborum a, pariatur facere, eveniet. Necessitatibus nulla accusantium nobis repellendus.</p>
 	</div>
@@ -30,7 +38,8 @@
 
 
 
-
+	/* burada da card card ayırdık her carda tıklandığında altındaki metin (card body içinde)
+	ortaya çıkıyor */
 
 	<div id="accordion">
 
